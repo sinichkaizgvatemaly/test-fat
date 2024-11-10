@@ -1,0 +1,21 @@
+.button {
+	padding: 10px 20px;
+	font-size: 16px;
+	color: white;
+	background-color: #4caf50;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	text-decoration: none; /* Убираем подчеркивание */
+	display: inline-block; /* Для корректного отображения внутри div */
+	margin: 5px; /* Отступы между кнопками */
+}
+
+.button:hover {
+	background-color: #45a049;
+}
+
+.button:focus {
+	outline: none;
+}

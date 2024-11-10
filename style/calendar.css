@@ -1,0 +1,38 @@
+.calendar {
+	width: 300px;
+	margin: 0 auto;
+	text-align: center;
+}
+.calendar__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.calendar__month {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.calendar__month button {
+	background: none;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+}
+.calendar__month span {
+	font-size: 18px;
+	margin: 0 10px;
+}
+.calendar__days {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 7px;
+}
+.calendar__day {
+  color: white;
+  background-color: #B2B2B2;
+	padding: 10px;
+	border-radius: 50%;
+}

@@ -1,0 +1,349 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+:root {
+	--primary-color: #2E3E50;  /* Основной зеленый цвет */
+	--secondary-color: #45a049;
+	--disabled-color: #ccc; /* Серый для отключенной кнопки */
+	--text-color: white; /* Белый для текста */
+	--background-color-button-hover:  #A0D3CB;
+	--border-radius: 10px;
+	--border-color: black;
+	--padding-button: 10px 20px;
+
+}
+
+/* ========================================================================================================= */
+.wraper {
+    margin: 0;
+    max-width: 100%;
+	 display: flex;
+    position: relative;
+	 flex-direction: column;
+	 height: 100%;
+}
+
+/* ========================================================================================================= */
+
+.result-block {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	margin: 20px auto;
+	max-width: 400px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+.first-section {
+	text-align: center;
+	margin: 0 ;
+	background: var(--primary-color);
+}
+
+#date-block {
+	font-size: 20px;
+	color: var(--text-color);
+	display: inline-block;
+	letter-spacing: 1px;
+}
+
+#date-block {
+	transition: all 0.3s ease;
+}
+
+#date-block:hover {
+	transform: scale(1.05);
+}
+
+.calculator {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* main-section======================================================================================= */
+.main-section{
+	background-color: #E3ECE9;
+}
+
+.main {
+	background-image: url('../img/back.jpg'); /* Указываем путь к изображению */
+	background-size: cover;  /* Покрывает весь контейнер */
+	background-position: center; /* Центрирует изображение */
+	height: 100vmax; /* Занимает 100% от высоты окна */
+}
+
+.calories {
+	margin-bottom: 20px;
+}
+
+.calories__total, .calories__percentage {
+	display: flex;
+	justify-content: space-between;
+	width: 300px;
+	margin: 10px 0;
+}
+
+.calories__label {
+	font-weight: bold;
+}
+
+.calories__value {
+	border-radius: 5px;
+	background-color: var(--primary-color);
+	color: var(--disabled-color);
+	font-size: 1.2em;
+}
+
+
+
+
+
+
+
+.protein, .fats, .cabs {
+	width: 30%; /* Каждому элементу отведено по 30% ширины контейнера */
+	text-align: center; /* Выравнивание текста по центру */
+}
+
+.proteinFatsCabs{
+
+	text-align: center;
+	margin: 0 ;
+	background: var(--primary-color);
+	.container{
+		margin: 20px auto;
+		color: white;
+		display: flex; /* Используем Flexbox для расположения элементов в ряд */
+	justify-content: space-between; /* Распределяем пространство между элементами */
+	align-items: center; /* Выравнивание по вертикали записать!!*/
+	}
+	.container__text {
+		font-size: 14px;
+		margin-bottom: 5px;
+	 }
+
+}
+
+
+
+ 
+ .progress-bar {
+	position: relative;
+	width: 100%;
+	height: 10px; /* Высота прогресс-бара */
+	background-color: #e0e0e0; /* Цвет фона прогресс-бара */
+	border-radius: 10px; /* Скругленные углы */
+ }
+ 
+ .progress-bar__line {
+	height: 100%;
+  width: 0;
+  border-radius: 10px;
+  transition: width 0.5s;
+ }
+ 
+ #progress-bar-proteins {
+	background-color: #4caf50; /* Зеленый для белков */
+ }
+ 
+ #progress-bar-fats {
+	background-color: #ff9800; /* Оранжевый для жиров */
+ }
+ 
+ #progress-bar-carbs {
+	background-color: #2196f3; /* Синий для углеводов */
+ }
+ 
+ .container__output {
+		text-align: center;
+		font-size: 16px;
+		color: white;
+ }
+ /* notebook======================================================================================= */
+ .notebook__button {
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+.notebook__button:hover {
+	background-color: #45a049;
+}
+.notebook__button:hover {
+	background-color: #45a049;
+}
+.notebook__section {
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	position: relative;
+	font-size: 16px;
+}
+.notebook__section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #ccc;
+}
+.notebook__section .content {
+	padding: 15px 0;
+	line-height: 1.6;
+}
+.notebook__section .timestamp {
+	font-size: 12px;
+	color: #888;
+	margin-top: 10px;
+	text-align: right;
+}
+
+
+
+
+/* Стиль для контейнера строки поиска */
+.search-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px;
+ }
+ 
+ .search-input {
+	padding: 10px;
+	font-size: 16px;
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+ }
+ 
+
+
+
+ /* product======================================================================================= */
+
+
+
+ /* Стили для блока с продуктом */
+.product-block {
+	margin: 20px 0;
+	padding: 15px;
+	background-color: transparent;
+	color: var(--disabled-color);
+}
+
+/* Заголовок продукта */
+.product-block h3 {
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/* Описание продуктов */
+.product-block p {
+	margin: 5px 0;
+	font-size: 14px;
+}
+
+
+
+ /* foter======================================================================================= */
+
+.footer {
+	width: 100%;
+	padding: 20px 0;
+	background-color: #2E3E50;
+	color: #fff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+}
+
+.footer__buttons {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer__button {
+	padding: 10px 20px;
+	font-size: 16px;
+	color: white;
+	background-color: #4caf50;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.footer__button:hover {
+	background-color: #45a049;
+}
+
+.footer__button:focus {
+	outline: none;
+}
+.footer__button img {
+	width: 40px;
+	height: 40px;
+}

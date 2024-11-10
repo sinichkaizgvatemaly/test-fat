@@ -1,0 +1,24 @@
+.search-container {
+	position: relative; /* Для правильного позиционирования кнопки */
+ }
+ 
+ .search-input {
+	/* padding-right: 30px; */
+ }
+ 
+ .clear-button {
+	position: absolute; /* Позиционирование относительно родителя */
+	right: 105px; /* Отступ от правого края */
+	top: 50%; /* Центрирование кнопки по вертикали */
+	transform: translateY(-50%); /* Центрирование по вертикали */
+	background: none;
+	border: none;
+	font-size: 20px;
+	color: #aaa; /* Цвет кнопки */
+	cursor: pointer;
+ }
+ 
+ .clear-button:hover {
+	color: #333; /* Цвет при наведении */
+ }
+ 
